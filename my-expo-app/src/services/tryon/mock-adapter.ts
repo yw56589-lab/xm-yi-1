@@ -18,11 +18,10 @@ const wait = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 let pollIndex = 0;
 const jobStore = new Map<string, TryOnPayload>();
 
-export async function saveProfile(input: Profile3DInput): Promise<{ profile_id: string }> {
+export async function saveProfile(input: Profile3DInput, profileId?: string): Promise<{ profile_id: string }> {
   await wait(260);
-  const profileId = `profile-${Date.now()}`;
   void input;
-  return { profile_id: profileId };
+  return { profile_id: profileId ?? `profile-${Date.now()}` };
 }
 
 export async function listGarments(filter?: {
@@ -81,6 +80,6 @@ export async function getSizeRecommendation(jobId: string): Promise<SizeRecommen
       hip_margin_cm: 2.6,
       shoulder_margin_cm: 1.2,
     },
-    explanation: "建议M码，胸围余量约3.0cm，整体偏合身。",
+    explanation: "建议 M 码，胸围余量约 3.0cm，整体偏合身。",
   };
 }

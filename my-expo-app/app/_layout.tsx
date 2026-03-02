@@ -21,6 +21,7 @@ export default function RootLayout() {
           }}
         >
           <Stack.Screen name="index" />
+          <Stack.Screen name="(tabs)" />
           <Stack.Screen name="product/[id]" />
           <Stack.Screen name="tryon/profile" />
           <Stack.Screen name="tryon/result" />

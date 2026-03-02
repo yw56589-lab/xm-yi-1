@@ -6,12 +6,15 @@ type TryOnSessionContextValue = {
   session: TryOnSession;
   setProfile: (profile: Profile3DInput, profileId: string, template?: string, modelName?: string) => void;
   setActiveModel: (modelId: string) => void;
+  deleteModel: (modelId: string) => void;
   setGarment: (garmentId: string, fit: TryOnSession["preferred_fit"]) => void;
   setJob: (jobId: string) => void;
   setJobState: (job: TryOnJob) => void;
   setResult: (topResultId: string, candidates: Candidate[]) => void;
   setSizeRecommendation: (recommendation: SizeRecommendation) => void;
   toggleHeatmap: () => void;
+  toggleFavorite: (garmentId: string) => void;
+  removeFavorite: (garmentId: string) => void;
   resetFlow: () => void;
 };
 
@@ -20,6 +23,7 @@ const initialSession: TryOnSession = {
   models: [],
   preferred_fit: "regular",
   heatmap_enabled: false,
+  favorites: [],
 };
 
 const TryOnSessionContext = createContext<TryOnSessionContextValue | null>(null);
@@ -39,9 +43,17 @@ export function TryOnSessionProvider({ children }: { children: React.ReactNode }
             profile,
             updated_at: new Date().toISOString(),
           };
+
+          if (!existing && prev.models.length >= 3) {
+            return {
+              ...prev,
+              selected_template: template,
+            };
+          }
+
           const mergedModels = existing
             ? prev.models.map((item) => (item.model_id === profileId ? nextModel : item))
-            : [...prev.models.slice(0, 2), nextModel];
+            : [...prev.models, nextModel];
 
           return {
             ...prev,
@@ -60,6 +72,21 @@ export function TryOnSessionProvider({ children }: { children: React.ReactNode }
             active_model_id: modelId,
             profile_id: modelId,
             profile: current?.profile,
+          };
+        }),
+      deleteModel: (modelId) =>
+        setSession((prev) => {
+          const mergedModels = prev.models.filter((item) => item.model_id !== modelId);
+          const nextActive =
+            prev.active_model_id && prev.active_model_id !== modelId ? prev.active_model_id : mergedModels[0]?.model_id;
+          const nextProfile = mergedModels.find((item) => item.model_id === nextActive)?.profile;
+
+          return {
+            ...prev,
+            models: mergedModels,
+            active_model_id: nextActive,
+            profile_id: nextActive,
+            profile: nextProfile,
           };
         }),
       setGarment: (garmentId, fit) =>
@@ -99,6 +126,21 @@ export function TryOnSessionProvider({ children }: { children: React.ReactNode }
           ...prev,
           heatmap_enabled: !prev.heatmap_enabled,
         })),
+      toggleFavorite: (garmentId) =>
+        setSession((prev) => {
+          const exists = prev.favorites.includes(garmentId);
+          return {
+            ...prev,
+            favorites: exists
+              ? prev.favorites.filter((item) => item !== garmentId)
+              : [...prev.favorites, garmentId],
+          };
+        }),
+      removeFavorite: (garmentId) =>
+        setSession((prev) => ({
+          ...prev,
+          favorites: prev.favorites.filter((item) => item !== garmentId),
+        })),
       resetFlow: () =>
         setSession((prev) => ({
           ...initialSession,
@@ -107,6 +149,7 @@ export function TryOnSessionProvider({ children }: { children: React.ReactNode }
           active_model_id: prev.active_model_id,
           profile: prev.profile,
           profile_id: prev.profile_id,
+          favorites: prev.favorites,
         })),
     }),
     [session],

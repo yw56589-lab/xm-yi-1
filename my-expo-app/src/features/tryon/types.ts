@@ -1,5 +1,6 @@
 export type ProfileSource = "template" | "manual" | "import";
 export type FitPreference = "regular" | "loose" | "slim";
+export type ProductGroup = "衬衫" | "上衣";
 
 export type Profile3DInput = {
   source: ProfileSource;
@@ -16,11 +17,18 @@ export type Garment = {
   garment_id: string;
   title: string;
   category: "tops" | "dress";
-  group?: "衬衫" | "上衣";
+  group?: ProductGroup;
   fit_type: "slim" | "regular" | "loose";
   style: "daily" | "office" | "sport";
   cover: string;
   fit_score: number;
+  price: number;
+  gallery: string[];
+  description: string;
+  intro_pairs: {
+    label: string;
+    value: string;
+  }[];
 };
 
 export type TryOnStage = "aligning" | "refining" | "scoring";
@@ -74,4 +82,5 @@ export type TryOnSession = {
   size_recommendation?: SizeRecommendation;
   heatmap_enabled: boolean;
   last_generated_at?: string;
+  favorites: string[];
 };

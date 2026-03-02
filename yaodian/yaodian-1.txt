@@ -1,0 +1,99 @@
+﻿【AI续接要点｜my-expo-app｜2026-03-02】
+
+0. 新对话起步说明（请先读）
+- 项目目录：D:\ai\xm yi-1\my-expo-app（路径有空格，命令要加引号）
+- 启动命令：
+  1) cd "D:\ai\xm yi-1\my-expo-app"
+  2) npx expo start -c
+- 当前阶段：UI第3轮迭代中（已从“统一试衣入口”改为“商品流+详情页底部AI试衣入口”）
+- 业务范围：仅AI试衣主流程，不做卖货/结算。
+
+1. 已确认的产品/流程决策（来自 PRD v2.1 可执行版 + 最新口头变更）
+- 技术路线：Expo Router + React + NativeWind（不切Vite）。
+- 视觉原则：shadcn风格（中性、轻边框、留白）。
+- Token硬约束：
+  - spacing仅 4/8/12/16/24/32/40/48
+  - Card内边距24，Card间距16
+  - Button高度40，Input高度40，Icon 16/20
+  - radius=10，border=1px（弱对比），shadow仅默认+hover两层
+  - 页面最大宽1200，左右padding 24
+- 当前流程（最新）：
+  1) 首页：模型管理 + 搜索 + 分类 + 商品列表（上半区域不超过1/3）
+  2) 商品详情页：正常商品详情结构 + 底部“AI试衣入口”
+  3) AI试衣入口点击后直接进试穿结果页
+  4) 三维人体模型独立管理，不要求每次试衣重复建立
+- 模型管理策略：用户通常1-3个模型，后续复用。
+
+2. 当前代码状态（关键）
+- 路由：
+  - app/index.tsx（首页）
+  - app/product/[id].tsx（商品详情）
+  - app/tryon/profile.tsx（人体模型管理/创建）
+  - app/tryon/result.tsx（试穿结果）
+  - app/_layout.tsx（Stack路由已注册以上页面）
+- 数据：mock商品已改为6个
+  - 衬衫1、衬衫2、上衣1、上衣2、上衣3、上衣4
+  - 文件：src/features/tryon/mock-data.ts
+- 状态：session支持模型列表
+  - fields: models[], active_model_id
+  - 文件：src/features/tryon/session-context.tsx, src/features/tryon/types.ts
+- 服务层：本地mock + API路由预留
+  - src/services/tryon/api-routes.ts
+  - src/services/tryon/mock-adapter.ts
+
+3. 本轮已做过的重要修复
+- Expo红屏500（Babel错误）已修复：
+  - 原因：nativewind/babel放在plugins导致“.plugins is not a valid Plugin property”
+  - 修复：移到presets
+  - 文件：babel.config.js
+- 校验记录：曾通过 npm run typecheck 与 npm run lint。
+
+4. 当前最需要继续处理的问题（高优先级）
+- 文案乱码问题（非常关键）：
+  - 多个页面中中文显示为乱码（如“鍏ㄩ儴”等），需统一恢复为UTF-8中文。
+  - 当前可见：app/index.tsx 已出现乱码；历史上 profile/result/mock-data 也发生过类似问题。
+  - 处理建议：
+    1) 逐文件替换为正常中文文案
+    2) 保存编码统一UTF-8
+    3) 再跑 typecheck/lint + 手机端验证
+
+5. 继续迭代建议（下一位AI直接执行）
+- Step A（先修稳定性）
+  1) 修复首页/详情/profile/result的中文文案乱码
+  2) 重新确认首页“搜索+分类+入口≤1/3高度”视觉比例
+- Step B（交互补齐）
+  1) 首页模型卡：若无模型，强引导去 profile
+  2) 商品详情底部按钮：无active_model时弹窗引导建模
+- Step C（体验优化）
+  1) 商品卡支持“衬衫/上衣”切换与搜索联动
+  2) 结果页保留，但按钮文案统一中文
+- Step D（回归）
+  1) npm run typecheck
+  2) npm run lint
+  3) expo手机端跑通：首页→详情→AI试衣入口→结果页
+
+6. 关键文件清单（新会话优先阅读顺序）
+1) app/index.tsx
+2) app/product/[id].tsx
+3) app/tryon/profile.tsx
+4) app/tryon/result.tsx
+5) app/_layout.tsx
+6) src/features/tryon/types.ts
+7) src/features/tryon/session-context.tsx
+8) src/features/tryon/mock-data.ts
+9) src/services/tryon/mock-adapter.ts
+10) docs/frontend-ui-delivery.md
+
+7. 与“PRD v2.1（可执行版）”的对齐情况
+- 已对齐：
+  - NativeWind化、light/dark token体系、组件层、mock接口预留
+  - 核心AI试衣主路径已存在
+- 已按用户新增需求偏移：
+  - 不再“每次试衣都先建模”
+  - 首页改为商品流入口，试衣入口下沉到商品详情底部
+- 待继续：
+  - 文案乱码清理
+  - 细节UI比例和中文信息密度打磨
+
+8. 新对话一句话Prompt建议
+“请在 D:\ai\xm yi-1\my-expo-app 基础上继续第3轮UI修改：先修复全站中文乱码并保持当前商品流（首页搜索分类+商品详情底部AI试衣入口）不回退，然后按 docs/frontend-ui-delivery.md 的token约束做细节对齐，最后跑 typecheck/lint 并给出变更文件清单。”
