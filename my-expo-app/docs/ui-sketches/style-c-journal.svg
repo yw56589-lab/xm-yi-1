@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="1280" viewBox="0 0 1200 1280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Style C - Journal Guochao try-on low-fi wireframes">
+  <rect x="0" y="0" width="1200" height="1280" fill="#fff8eb" />
+  
+    <rect x="20" y="70" width="1160" height="1180" rx="24" fill="none" stroke="#f7c35f" opacity="0.2" stroke-dasharray="8 8" />
+    <path d="M60 220 C220 170, 320 260, 470 220" stroke="#f97316" opacity="0.28" fill="none" stroke-width="3" />
+    <path d="M730 210 C900 150, 970 270, 1130 220" stroke="#1d4ed8" opacity="0.24" fill="none" stroke-width="3" />
+    <path d="M100 1170 C250 1110, 370 1210, 520 1160" stroke="#1d4ed8" opacity="0.18" fill="none" stroke-width="3" />
+  
+
+  <text x="40" y="52" fill="#2f2117" font-family="Arial, sans-serif" font-size="30" font-weight="700">Style C - Journal Guochao</text>
+  <text x="40" y="84" fill="#7d5f47" font-family="Arial, sans-serif" font-size="14">Core 5 screens: Home, Profile, Garment, Generating, Result</text>
+
+  
+    <g>
+      <rect x="40" y="120" width="340" height="520" rx="20" fill="#fffdf8" stroke="#ead9b5" stroke-width="3" />
+      <rect x="56" y="136" width="308" height="58" rx="12" fill="#f97316" opacity="0.12" />
+      <text x="66" y="160" fill="#2f2117" font-family="Arial, sans-serif" font-size="16" font-weight="700">Home</text>
+      <text x="66" y="180" fill="#7d5f47" font-family="Arial, sans-serif" font-size="12">Value + Q avatar + CTA</text>
+
+      <rect x="56" y="206" width="308" height="92" rx="14" fill="#f7c35f" opacity="0.16" />
+      
+    <g transform="translate(158, 212)">
+      <circle cx="48" cy="34" r="24" fill="#1d4ed8" opacity="0.85" />
+      <circle cx="48" cy="33" r="19" fill="#fff" stroke="#2f2117" stroke-width="1.2" />
+      <circle cx="42" cy="30" r="2.5" fill="#2f2117" />
+      <circle cx="54" cy="30" r="2.5" fill="#2f2117" />
+      <path d="M40 38 Q48 45 56 38" stroke="#2f2117" stroke-width="1.4" fill="none" />
+      <rect x="31" y="56" width="34" height="40" rx="12" fill="#f97316" opacity="0.9" />
+      <line x1="31" y1="68" x2="18" y2="79" stroke="#f7c35f" stroke-width="5" stroke-linecap="round" />
+      <line x1="65" y1="68" x2="78" y2="79" stroke="#f7c35f" stroke-width="5" stroke-linecap="round" />
+      <line x1="40" y1="96" x2="34" y2="116" stroke="#2f2117" stroke-width="4" stroke-linecap="round" />
+      <line x1="56" y1="96" x2="62" y2="116" stroke="#2f2117" stroke-width="4" stroke-linecap="round" />
+    </g>
+  
+      <text x="280" y="260" fill="#7d5f47" font-family="Arial, sans-serif" font-size="10">Q-avatar</text>
+      <text x="280" y="278" fill="#7d5f47" font-family="Arial, sans-serif" font-size="10">placeholder</text>
+
+      
+      
+        <circle cx="64" cy="321" r="2.5" fill="#1d4ed8" />
+        <text x="74" y="324" fill="#2f2117" font-family="Arial, sans-serif" font-size="11">Hero: See fit + size advice in 3s</text>
+      
+        <circle cx="64" cy="343" r="2.5" fill="#1d4ed8" />
+        <text x="74" y="346" fill="#2f2117" font-family="Arial, sans-serif" font-size="11">Main CTA: btn_start_tryon</text>
+      
+        <circle cx="64" cy="365" r="2.5" fill="#1d4ed8" />
+        <text x="74" y="368" fill="#2f2117" font-family="Arial, sans-serif" font-size="11">Hint: only a few body fields needed</text>
+      
+      
+      
+        <rect x="56" y="496" width="308" height="24" rx="14" fill="#f97316" opacity="0.9" />
+        <text x="66" y="512" fill="#ffffff" font-family="Arial, sans-serif" font-size="11" font-weight="700">btn_start_tryon</text>
+      
+
+      <rect x="56" y="606" width="308" height="20" rx="10" fill="#1d4ed8" opacity="0.08" />
+      <text x="66" y="620" fill="#7d5f47" font-family="Arial, sans-serif" font-size="10">Low-fi wireframe board</text>
+    </g>
+  
+
+    <g>
+      <rect x="420" y="120" width="340" height="520" rx="20" fill="#fffdf8" stroke="#ead9b5" stroke-width="3" />
+      <rect x="436" y="136" width="308" height="58" rx="12" fill="#f97316" opacity="0.12" />
+      <text x="446" y="160" fill="#2f2117" font-family="Arial, sans-serif" font-size="16" font-weight="700">Profile Input (1/4)</text>
+      <text x="446" y="180" fill="#7d5f47" font-family="Arial, sans-serif" font-size="12">Template / Manual / Import</text>
+
+      <rect x="436" y="206" width="308" height="92" rx="14" fill="#f7c35f" opacity="0.16" />
+      
+    <g transform="translate(538, 212)">
+      <circle cx="48" cy="34" r="24" fill="#1d4ed8" opacity="0.85" />
+      <circle cx="48" cy="33" r="19" fill="#fff" stroke="#2f2117" stroke-width="1.2" />
+      <circle cx="42" cy="30" r="2.5" fill="#2f2117" />
+      <circle cx="54" cy="30" r="2.5" fill="#2f2117" />
+      <path d="M40 38 Q48 45 56 38" stroke="#2f2117" stroke-width="1.4" fill="none" />
+      <rect x="31" y="56" width="34" height="40" rx="12" fill="#f97316" opacity="0.9" />
+      <line x1="31" y1="68" x2="18" y2="79" stroke="#f7c35f" stroke-width="5" stroke-linecap="round" />
+      <line x1="65" y1="68" x2="78" y2="79" stroke="#f7c35f" stroke-width="5" stroke-linecap="round" />
+      <line x1="40" y1="96" x2="34" y2="116" stroke="#2f2117" stroke-width="4" stroke-linecap="round" />
+      <line x1="56" y1="96" x2="62" y2="116" stroke="#2f2117" stroke-width="4" stroke-linecap="round" />
+    </g>
+  
+      <text x="660" y="260" fill="#7d5f47" font-family="Arial, sans-serif" font-size="10">Q-avatar</text>
+      <text x="660" y="278" fill="#7d5f47" font-family="Arial, sans-serif" font-size="10">placeholder</text>
+
+      
+      
+        <circle cx="444" cy="321" r="2.5" fill="#1d4ed8" />
+        <text x="454" y="324" fill="#2f2117" font-family="Arial, sans-serif" font-size="11">Template button: btn_use_template</text>
+      
+        <circle cx="444" cy="343" r="2.5" fill="#1d4ed8" />
+        <text x="454" y="346" fill="#2f2117" font-family="Arial, sans-serif" font-size="11">Import button: btn_import_profile</text>
+      
+        <circle cx="444" cy="365" r="2.5" fill="#1d4ed8" />
+        <text x="454" y="368" fill="#2f2117" font-family="Arial, sans-serif" font-size="11">Fields: height, shoulder, bust, waist, hip, arm</text>
+      
+        <circle cx="444" cy="387" r="2.5" fill="#1d4ed8" />
+        <text x="454" y="390" fill="#2f2117" font-family="Arial, sans-serif" font-size="11">Save: btn_save_profile</text>
+      
+        <circle cx="444" cy="409" r="2.5" fill="#1d4ed8" />
+        <text x="454" y="412" fill="#2f2117" font-family="Arial, sans-serif" font-size="11">Next: btn_next_select_garment</text>
+      
+      
+      
+        <rect x="436" y="496" width="308" height="24" rx="14" fill="#f97316" opacity="0.9" />
+        <text x="446" y="512" fill="#ffffff" font-family="Arial, sans-serif" font-size="11" font-weight="700">btn_use_template</text>
+      
+        <rect x="436" y="528" width="308" height="24" rx="14" fill="#f97316" opacity="0.9" />
+        <text x="446" y="544" fill="#ffffff" font-family="Arial, sans-serif" font-size="11" font-weight="700">btn_import_profile</text>
+      
+        <rect x="436" y="560" width="308" height="24" rx="14" fill="#f97316" opacity="0.9" />
+        <text x="446" y="576" fill="#ffffff" font-family="Arial, sans-serif" font-size="11" font-weight="700">btn_save_profile</text>
+      
+        <rect x="436" y="592" width="308" height="24" rx="14" fill="#f97316" opacity="0.9" />
+        <text x="446" y="608" fill="#ffffff" font-family="Arial, sans-serif" font-size="11" font-weight="700">btn_next_select_garment</text>
+      
+
+      <rect x="436" y="606" width="308" height="20" rx="10" fill="#1d4ed8" opacity="0.08" />
+      <text x="446" y="620" fill="#7d5f47" font-family="Arial, sans-serif" font-size="10">Low-fi wireframe board</text>
+    </g>
+  
+
+    <g>
+      <rect x="800" y="120" width="340" height="520" rx="20" fill="#fffdf8" stroke="#ead9b5" stroke-width="3" />
+      <rect x="816" y="136" width="308" height="58" rx="12" fill="#f97316" opacity="0.12" />
+      <text x="826" y="160" fill="#2f2117" font-family="Arial, sans-serif" font-size="16" font-weight="700">Garment Select (2/4)</text>
+      <text x="826" y="180" fill="#7d5f47" font-family="Arial, sans-serif" font-size="12">Filter + SKU grid + size</text>
+
+      <rect x="816" y="206" width="308" height="92" rx="14" fill="#f7c35f" opacity="0.16" />
+      
+    <g transform="translate(918, 212)">
+      <circle cx="48" cy="34" r="24" fill="#1d4ed8" opacity="0.85" />
+      <circle cx="48" cy="33" r="19" fill="#fff" stroke="#2f2117" stroke-width="1.2" />
+      <circle cx="42" cy="30" r="2.5" fill="#2f2117" />
+      <circle cx="54" cy="30" r="2.5" fill="#2f2117" />
+      <path d="M40 38 Q48 45 56 38" stroke="#2f2117" stroke-width="1.4" fill="none" />
+      <rect x="31" y="56" width="34" height="40" rx="12" fill="#f97316" opacity="0.9" />
+      <line x1="31" y1="68" x2="18" y2="79" stroke="#f7c35f" stroke-width="5" stroke-linecap="round" />
+      <line x1="65" y1="68" x2="78" y2="79" stroke="#f7c35f" stroke-width="5" stroke-linecap="round" />
+      <line x1="40" y1="96" x2="34" y2="116" stroke="#2f2117" stroke-width="4" stroke-linecap="round" />
+      <line x1="56" y1="96" x2="62" y2="116" stroke="#2f2117" stroke-width="4" stroke-linecap="round" />
+    </g>
+  
+      <text x="1040" y="260" fill="#7d5f47" font-family="Arial, sans-serif" font-size="10">Q-avatar</text>
+      <text x="1040" y="278" fill="#7d5f47" font-family="Arial, sans-serif" font-size="10">placeholder</text>
+
+      
+      
+        <circle cx="824" cy="321" r="2.5" fill="#1d4ed8" />
+        <text x="834" y="324" fill="#2f2117" font-family="Arial, sans-serif" font-size="11">Filters: category, color, size</text>
+      
+        <circle cx="824" cy="343" r="2.5" fill="#1d4ed8" />
+        <text x="834" y="346" fill="#2f2117" font-family="Arial, sans-serif" font-size="11">Cards: Q avatar + garment thumbnail</text>
+      
+        <circle cx="824" cy="365" r="2.5" fill="#1d4ed8" />
+        <text x="834" y="368" fill="#2f2117" font-family="Arial, sans-serif" font-size="11">Primary action: btn_start_generate</text>
+      
+      
+      
+        <rect x="816" y="496" width="308" height="24" rx="14" fill="#f97316" opacity="0.9" />
+        <text x="826" y="512" fill="#ffffff" font-family="Arial, sans-serif" font-size="11" font-weight="700">btn_start_generate</text>
+      
+
+      <rect x="816" y="606" width="308" height="20" rx="10" fill="#1d4ed8" opacity="0.08" />
+      <text x="826" y="620" fill="#7d5f47" font-family="Arial, sans-serif" font-size="10">Low-fi wireframe board</text>
+    </g>
+  
+
+    <g>
+      <rect x="230" y="700" width="340" height="520" rx="20" fill="#fffdf8" stroke="#ead9b5" stroke-width="3" />
+      <rect x="246" y="716" width="308" height="58" rx="12" fill="#f97316" opacity="0.12" />
+      <text x="256" y="740" fill="#2f2117" font-family="Arial, sans-serif" font-size="16" font-weight="700">Generating (3/4)</text>
+      <text x="256" y="760" fill="#7d5f47" font-family="Arial, sans-serif" font-size="12">Aligning -&gt; Refining -&gt; Scoring</text>
+
+      <rect x="246" y="786" width="308" height="92" rx="14" fill="#f7c35f" opacity="0.16" />
+      
+    <g transform="translate(348, 792)">
+      <circle cx="48" cy="34" r="24" fill="#1d4ed8" opacity="0.85" />
+      <circle cx="48" cy="33" r="19" fill="#fff" stroke="#2f2117" stroke-width="1.2" />
+      <circle cx="42" cy="30" r="2.5" fill="#2f2117" />
+      <circle cx="54" cy="30" r="2.5" fill="#2f2117" />
+      <path d="M40 38 Q48 45 56 38" stroke="#2f2117" stroke-width="1.4" fill="none" />
+      <rect x="31" y="56" width="34" height="40" rx="12" fill="#f97316" opacity="0.9" />
+      <line x1="31" y1="68" x2="18" y2="79" stroke="#f7c35f" stroke-width="5" stroke-linecap="round" />
+      <line x1="65" y1="68" x2="78" y2="79" stroke="#f7c35f" stroke-width="5" stroke-linecap="round" />
+      <line x1="40" y1="96" x2="34" y2="116" stroke="#2f2117" stroke-width="4" stroke-linecap="round" />
+      <line x1="56" y1="96" x2="62" y2="116" stroke="#2f2117" stroke-width="4" stroke-linecap="round" />
+    </g>
+  
+      <text x="470" y="840" fill="#7d5f47" font-family="Arial, sans-serif" font-size="10">Q-avatar</text>
+      <text x="470" y="858" fill="#7d5f47" font-family="Arial, sans-serif" font-size="10">placeholder</text>
+
+      
+      
+        <circle cx="254" cy="901" r="2.5" fill="#1d4ed8" />
+        <text x="264" y="904" fill="#2f2117" font-family="Arial, sans-serif" font-size="11">Progress stages and ETA 3-5s</text>
+      
+        <circle cx="254" cy="923" r="2.5" fill="#1d4ed8" />
+        <text x="264" y="926" fill="#2f2117" font-family="Arial, sans-serif" font-size="11">Cancel action: btn_cancel_job</text>
+      
+      
+        <rect x="246" y="1056" width="308" height="8" rx="4" fill="#ead9b5" />
+        <rect x="246" y="1056" width="200" height="8" rx="4" fill="#f97316" />
+      
+      
+        <rect x="246" y="1076" width="308" height="24" rx="14" fill="#f97316" opacity="0.9" />
+        <text x="256" y="1092" fill="#ffffff" font-family="Arial, sans-serif" font-size="11" font-weight="700">btn_cancel_job</text>
+      
+
+      <rect x="246" y="1186" width="308" height="20" rx="10" fill="#1d4ed8" opacity="0.08" />
+      <text x="256" y="1200" fill="#7d5f47" font-family="Arial, sans-serif" font-size="10">Low-fi wireframe board</text>
+    </g>
+  
+
+    <g>
+      <rect x="610" y="700" width="340" height="520" rx="20" fill="#fffdf8" stroke="#ead9b5" stroke-width="3" />
+      <rect x="626" y="716" width="308" height="58" rx="12" fill="#f97316" opacity="0.12" />
+      <text x="636" y="740" fill="#2f2117" font-family="Arial, sans-serif" font-size="16" font-weight="700">Result (4/4)</text>
+      <text x="636" y="760" fill="#7d5f47" font-family="Arial, sans-serif" font-size="12">Top result + size explanation</text>
+
+      <rect x="626" y="786" width="308" height="92" rx="14" fill="#f7c35f" opacity="0.16" />
+      
+    <g transform="translate(728, 792)">
+      <circle cx="48" cy="34" r="24" fill="#1d4ed8" opacity="0.85" />
+      <circle cx="48" cy="33" r="19" fill="#fff" stroke="#2f2117" stroke-width="1.2" />
+      <circle cx="42" cy="30" r="2.5" fill="#2f2117" />
+      <circle cx="54" cy="30" r="2.5" fill="#2f2117" />
+      <path d="M40 38 Q48 45 56 38" stroke="#2f2117" stroke-width="1.4" fill="none" />
+      <rect x="31" y="56" width="34" height="40" rx="12" fill="#f97316" opacity="0.9" />
+      <line x1="31" y1="68" x2="18" y2="79" stroke="#f7c35f" stroke-width="5" stroke-linecap="round" />
+      <line x1="65" y1="68" x2="78" y2="79" stroke="#f7c35f" stroke-width="5" stroke-linecap="round" />
+      <line x1="40" y1="96" x2="34" y2="116" stroke="#2f2117" stroke-width="4" stroke-linecap="round" />
+      <line x1="56" y1="96" x2="62" y2="116" stroke="#2f2117" stroke-width="4" stroke-linecap="round" />
+    </g>
+  
+      <text x="850" y="840" fill="#7d5f47" font-family="Arial, sans-serif" font-size="10">Q-avatar</text>
+      <text x="850" y="858" fill="#7d5f47" font-family="Arial, sans-serif" font-size="10">placeholder</text>
+
+      
+        <rect x="626" y="836" width="148" height="24" rx="8" fill="#1d4ed8" opacity="0.12" />
+        <text x="634" y="852" fill="#2f2117" font-family="Arial, sans-serif" font-size="10">btn_switch_candidate_1</text>
+        <rect x="786" y="836" width="148" height="24" rx="8" fill="#1d4ed8" opacity="0.12" />
+        <text x="794" y="852" fill="#2f2117" font-family="Arial, sans-serif" font-size="10">btn_switch_candidate_2</text>
+      
+      
+        <circle cx="634" cy="901" r="2.5" fill="#1d4ed8" />
+        <text x="644" y="904" fill="#2f2117" font-family="Arial, sans-serif" font-size="11">Candidate switch: btn_switch_candidate_1 / 2</text>
+      
+        <circle cx="634" cy="923" r="2.5" fill="#1d4ed8" />
+        <text x="644" y="926" fill="#2f2117" font-family="Arial, sans-serif" font-size="11">Explain panel: btn_view_size_explain</text>
+      
+        <circle cx="634" cy="945" r="2.5" fill="#1d4ed8" />
+        <text x="644" y="948" fill="#2f2117" font-family="Arial, sans-serif" font-size="11">Actions: btn_regenerate, btn_save_result, btn_share_card</text>
+      
+      
+      
+        <rect x="626" y="1076" width="308" height="24" rx="14" fill="#f97316" opacity="0.9" />
+        <text x="636" y="1092" fill="#ffffff" font-family="Arial, sans-serif" font-size="11" font-weight="700">btn_switch_candidate_1</text>
+      
+        <rect x="626" y="1108" width="308" height="24" rx="14" fill="#f97316" opacity="0.9" />
+        <text x="636" y="1124" fill="#ffffff" font-family="Arial, sans-serif" font-size="11" font-weight="700">btn_switch_candidate_2</text>
+      
+        <rect x="626" y="1140" width="308" height="24" rx="14" fill="#f97316" opacity="0.9" />
+        <text x="636" y="1156" fill="#ffffff" font-family="Arial, sans-serif" font-size="11" font-weight="700">btn_view_size_explain</text>
+      
+        <rect x="626" y="1172" width="308" height="24" rx="14" fill="#f97316" opacity="0.9" />
+        <text x="636" y="1188" fill="#ffffff" font-family="Arial, sans-serif" font-size="11" font-weight="700">btn_regenerate</text>
+      
+
+      <rect x="626" y="1186" width="308" height="20" rx="10" fill="#1d4ed8" opacity="0.08" />
+      <text x="636" y="1200" fill="#7d5f47" font-family="Arial, sans-serif" font-size="10">Low-fi wireframe board</text>
+    </g>
+  
+</svg>
